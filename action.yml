@@ -1,0 +1,15 @@
+name: 'setup-custom-task'
+description: 'Installs the go-task tool and enables cache'
+branding:
+  icon: briefcase
+  color: blue
+inputs:
+  enable-cache:
+    description: 'Cache or not the installation'
+    required: false
+  version:
+    description: 'The version of custom go-task to be used. Check https://github.com/nightstory/task/releases for valid options.'
+    required: false
+runs:
+  using: 'node16'
+  main: 'lib_main/index.js'
